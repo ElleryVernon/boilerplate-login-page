@@ -6,7 +6,7 @@ const port = 3000;
 
 mongoose
   .connect(
-    "mongodb+srv://HanSeongMin:Rlflsdmlskfro1@@boilerplate.qosdp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
