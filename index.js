@@ -10,7 +10,7 @@ const port = 3000;
 
 //aplication/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
-ㅎ
+
 //application/json
 app.use(bodyParser.json());
                                
