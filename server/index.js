@@ -7,9 +7,9 @@ const { auth } = require("./middleware/auth")
 const { User } = require("./models/User")
 
 const app = express()
-const port = 3000
+const port = 5000
 
-//aplication/x-www-form-urlencoded
+// aplication/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }))
 
 //application/json
@@ -25,6 +25,10 @@ mongoose
   })
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log(err))
+
+app.get("/api/hello", (req, res) => {
+  res.send("안녕하세요")
+})
 
 app.get("/", (req, res) => {
   res.send("Hello World")
